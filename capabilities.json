@@ -1,0 +1,104 @@
+{
+    "privileges": [
+        {
+            "name": "WebAccess",
+            "essential": true,
+            "parameters": [
+                "https://*",
+                "http://*"
+            ]
+        }
+    ],
+    "dataRoles": [
+        {
+            "displayName": "Images Content",
+            "name": "content",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Image Thumbnail",
+            "name": "thumbnail",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Heading",
+            "name": "heading",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Subheading",
+            "name": "subheading",
+            "kind": "Grouping"
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "content": {
+                        "max": 1
+                    },
+                    "thumbnail": {
+                        "max": 1
+                    },
+                    "heading": {
+                        "max": 1
+                    },
+                    "subheading": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "select": [
+                        {
+                            "for": {
+                                "in": "content"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "thumbnail"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "heading"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "subheading"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "objects": {
+        "general": {
+            "properties": {
+                "filter": {
+                    "type": {
+                        "filter": false
+                    }
+                }
+            }
+        },
+        "configuracion": {
+            "displayName": "Settings",
+            "properties": {
+                "duration": {
+                    "displayName": "Duration (ms)",
+                    "description": "Slides duration",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        }
+    },
+    "supportsEmptyDataView": false
+}

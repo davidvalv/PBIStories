@@ -1,0 +1,17 @@
+{
+    "version": "1.1.0",
+    "author": {"name":"David Vila","email":"davidvila95@gmail.com"},
+    "resources": [
+        {
+            "resourceId": "rId0",
+            "sourceType": 5,
+            "file": "resources/PBIStoriesA2CCEF2419CE47829BCCE53D5B7C0000.pbiviz.json"
+        }
+    ],
+    "visual": {"name":"pbistories","displayName":"PowerBI Stories","guid":"PBIStoriesA2CCEF2419CE47829BCCE53D5B7C0000","visualClassName":"Visual","version":"1.1.0","description":"Instagram Stories lookalike for PowerBI. Powered by react-insta-stories library (https://www.npmjs.com/package/react-insta-stories)","supportUrl":"https://www.npmjs.com/package/react-insta-stories","gitHubUrl":""},
+    "metadata": {
+        "pbivizjson": {
+            "resourceId": "rId0"
+        }
+    }  
+}
